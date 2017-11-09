@@ -52,7 +52,7 @@ $ git clone https://github.com/charlon/scout-django
 $ cd scout-django
 ```
 Initialize EB
-based on (http://glynjackson.org/weblog/tutorial-deploying-django-app-aws-elastic-beanstalk-using-docker/)
+http://glynjackson.org/weblog/tutorial-deploying-django-app-aws-elastic-beanstalk-using-docker/
 ```
 $ cd scoutproject
 $ eb init
