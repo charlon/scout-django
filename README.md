@@ -3,15 +3,19 @@ Django rewrite of Scout utilizing Docker for deployment
 
 ## Local Installation
 
-Xcode 8 and Swift 2.3
 
-Steps
-
+Clone this repository
 ```
 $ git clone https://github.com/charlon/scout-django
 $ cd scout-django
+```
+Create a Virtualenv and activate
+```
 $ virtualenv .
 $ source bin/activate
+```
+Install dependencies
+```
 $ cd scoutproject
 $ pip install -r requirements.txt
 $ python manage.py runserver 0:8000
@@ -19,9 +23,19 @@ $ python manage.py runserver 0:8000
 
 ## Docker (local) Installation
 
+Make sure Docker is installed.
+
 Clone this repository
 ```
 $ git clone https://github.com/uw-it-aca/scout-ios
+```
+Run Docker Compose
+```
+$ cd scout-django
+$ cd scoutproject
+$ docker-compose up
+OR
+$ docker-compose up —build (forced rebuild)
 ```
 
 ## Docker (AWS) Installation
@@ -39,8 +53,10 @@ Initialize EB
 ```
 $ eb init
 ```
-— create name of application
-— “it appears you are using Docker…” YES!
+create name of application
+
+AWS will find you Dockerfile... “it appears you are using Docker…” YES!
+
 ```
 $ eb console
 $ eb create
