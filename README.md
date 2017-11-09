@@ -27,11 +27,11 @@ Make sure Docker is installed.
 
 Clone this repository
 ```
-$ git clone https://github.com/uw-it-aca/scout-ios
+$ git clone https://github.com/uw-it-aca/scout-django
+$ cd scout-django
 ```
 Run Docker Compose
 ```
-$ cd scout-django
 $ cd scoutproject
 $ docker-compose up
 ```
@@ -49,6 +49,7 @@ $ pip install awsebcli
 Clone the repo
 ```
 $ git clone https://github.com/charlon/scout-django
+$ cd scout-django
 $ cd scoutproject
 ```
 Initialize EB 
