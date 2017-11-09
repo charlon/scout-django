@@ -52,8 +52,8 @@ ADD ./deploy/supervisor_conf.d/webapp.conf /etc/supervisor/conf.d/webapp.conf
 # Install dependencies and run scripts.
 ##############################################################################
 
-ADD .      /var/projects/mysite
-WORKDIR /var/projects/mysite
+ADD .      /var/projects/scoutproject
+WORKDIR /var/projects/scoutproject
 RUN pip install -r requirements.txt
 
 ##############################################################################
