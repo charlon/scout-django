@@ -29,6 +29,9 @@ $ git clone https://github.com/uw-it-aca/scout-ios
 Spin up your EB instance and make sure CLI is installed
 ```
 $ pip install awsebcli
+```
+Clone the repo
+```
 $ git clone https://github.com/charlon/scout-django
 $ cd scoutproject
 ```
