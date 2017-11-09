@@ -34,8 +34,10 @@ Run Docker Compose
 $ cd scout-django
 $ cd scoutproject
 $ docker-compose up
-OR
-$ docker-compose up —build (forced rebuild)
+```
+Force a rebuild if changes are made to the Docker configuration
+```
+$ docker-compose up —build
 ```
 
 ## Docker (AWS) Installation
