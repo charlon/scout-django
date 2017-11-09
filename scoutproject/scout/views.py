@@ -11,3 +11,11 @@ def index(request):
         'hello': "hello scout",
     }
     return HttpResponse(template.render(context, request))
+
+
+def about(request):
+    template = loader.get_template('scout/about.html')
+    context = {
+        'hello': "about scout",
+    }
+    return HttpResponse(template.render(context, request))
