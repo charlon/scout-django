@@ -46,7 +46,7 @@ Spin up your EB instance and make sure CLI is installed
 ```
 $ pip install awsebcli
 ```
-Clone the repo
+Clone this repository
 ```
 $ git clone https://github.com/charlon/scout-django
 $ cd scout-django
