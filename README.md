@@ -50,15 +50,13 @@ Clone the repo
 ```
 $ git clone https://github.com/charlon/scout-django
 $ cd scout-django
-$ cd scoutproject
 ```
 Initialize EB 
 ```
+$ cd scoutproject
 $ eb init
 ```
-create name of application
-
-AWS will find you Dockerfile... “it appears you are using Docker…” YES!
+Create name of application. Let EB do it's thing and it will eventuall find your Dockerfile... “it appears you are using Docker…” say YES!
 
 ```
 $ eb console
