@@ -1,6 +1,6 @@
-# docker compose for orchestrating multiple containers
+# docker compose for orchestrating local development containers
 web:
-    build: .
+    build: ./dev
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
         - .:/app
