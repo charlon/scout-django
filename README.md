@@ -1,8 +1,7 @@
 # scout-django
 Django rewrite of Scout utilizing Docker for deployment
 
-## Local Installation
-
+## Option 1: Manual Installation
 
 Clone this repository
 ```
@@ -21,7 +20,7 @@ $ pip install -r requirements.txt
 $ python manage.py runserver 0:8000
 ```
 
-## Option 1a: Docker Installation
+## Option 2a: Docker Installation
 
 Make sure Docker is installed.
 
@@ -36,7 +35,7 @@ $ cd scoutproject
 $ docker build -t scout .
 $ docker run -tp 8000:8000 scout
 ```
-## Option 1b: Docker + Docker Compose Installation
+## Option 2b: Docker + Docker Compose Installation
 
 Run Docker Compose
 ```
@@ -52,7 +51,7 @@ Kill the container and image
 $ docker-compose kill scout
 ```
 
-## Option 2: Docker + AWS Installation (production)
+## Option 3: Docker + AWS Installation (production)
 
 Spin up your EB instance and make sure CLI is installed
 ```
