@@ -21,7 +21,7 @@ $ pip install -r requirements.txt
 $ python manage.py runserver 0:8000
 ```
 
-## Docker-only (local) Installation
+## Option 1a: Docker Installation
 
 Make sure Docker is installed.
 
@@ -36,7 +36,7 @@ $ cd scoutproject
 $ docker build -t scout .
 $ docker run -tp 8000:8000 scout
 ```
-## Docker + Docker Compose (local) Installation
+## Option 1b: Docker + Docker Compose Installation
 
 Run Docker Compose
 ```
@@ -45,10 +45,14 @@ $ docker-compose up
 ```
 Force a rebuild if changes are made to the Docker configuration
 ```
-$ docker-compose up —build
+$ docker-compose build scout
+```
+Kill the container and image
+```
+$ docker-compose kill scout
 ```
 
-## Docker (AWS) Installation
+## Option 2: Docker + AWS Installation (production)
 
 Spin up your EB instance and make sure CLI is installed
 ```
