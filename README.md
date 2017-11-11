@@ -34,13 +34,8 @@ Build and run the container
 ```
 $ cd scoutproject
 $ docker build -t scout .
-$  docker run -tp 8000:8000 scout
+$ docker run -tp 8000:8000 scout
 ```
-Run the container
-```
-http://localhost:8000
-```
-
 ## Docker + Docker Compose (local) Installation
 
 Run Docker Compose
