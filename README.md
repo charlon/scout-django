@@ -21,7 +21,7 @@ $ pip install -r requirements.txt
 $ python manage.py runserver 0:8000
 ```
 
-## Docker (local) Installation
+## Docker-only (local) Installation
 
 Make sure Docker is installed.
 
@@ -30,6 +30,19 @@ Clone this repository
 $ git clone https://github.com/uw-it-aca/scout-django
 $ cd scout-django
 ```
+Build and run the container
+```
+$ cd scoutproject
+$ docker build -t scout .
+$  docker run -tp 8000:8000 scout
+```
+Run the container
+```
+http://localhost:8000
+```
+
+## Docker + Docker Compose (local) Installation
+
 Run Docker Compose
 ```
 $ cd scoutproject
