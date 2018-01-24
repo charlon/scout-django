@@ -1,12 +1,12 @@
-# scout-django
+# scout-docker
 Django rewrite of Scout utilizing Docker for deployment
 
 ## Option 1: Manual Installation
 
 Clone this repository
 ```
-$ git clone https://github.com/charlon/scout-django
-$ cd scout-django
+$ git clone https://github.com/charlon/scout-docker
+$ cd scout-docker
 ```
 Create a Virtualenv and activate
 ```
@@ -26,8 +26,8 @@ Make sure Docker is installed.
 
 Clone this repository
 ```
-$ git clone https://github.com/uw-it-aca/scout-django
-$ cd scout-django
+$ git clone https://github.com/uw-it-aca/scout-docker
+$ cd scout-docker
 ```
 Build and run the container
 ```
